@@ -300,7 +300,7 @@ service netmgrd /system/vendor/bin/netmgrd
 service sensors /system/vendor/bin/sensors.qcom
     class late_start
     user root
-    group root
+    group root wakelock
 
 # Adjust socket buffer to enlarge TCP receive window for high bandwidth
 # but only if ro.data.large_tcp_window_size property is set.
