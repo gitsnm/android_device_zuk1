@@ -63,8 +63,9 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-impl \
-    android.hardware.power@1.1-service-qti
+    android.hardware.power@1.1-service-qti \
+    power.msm8974
+#    android.hardware.power@1.0-service.msm8974
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -85,4 +86,6 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service 
+
+
 

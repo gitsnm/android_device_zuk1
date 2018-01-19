@@ -180,8 +180,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.media.treble_omx=false
 
 # Power
-PRODUCT_PACKAGES += \
-    power.msm8974
+#PRODUCT_PACKAGES += \
+#    power.msm8974
 
 # Keylayouts
 PRODUCT_COPY_FILES += \

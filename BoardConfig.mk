@@ -31,6 +31,7 @@ TARGET_NO_RADIOIMAGE := true
 # Platform
 TARGET_BOARD_PLATFORM := msm8974
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
+QCOM_BOARD_PLATFORMS += msm8974
 
 # Architecture
 TARGET_ARCH := arm
@@ -91,8 +92,20 @@ TARGET_USE_COMPAT_GRALLOC_ALIGN := true
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
-# Tap to wake
+
+# PowerHAL
+#TARGET_POWERHAL_VARIANT := qcom
+
+# Power
+TARGET_POWERHAL_VARIANT := qcom
+#TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(DEVICE_PATH)/power/power_ext.c
+#TARGET_PROVIDES_POWERHAL := false
+#TARGET_HAS_NO_WIFI_STATS := true
 TARGET_TAP_TO_WAKE_NODE := /sys/devices/virtual/touch/tp_dev/gesture_on
+# PowerHAL
+#TARGET_HAS_LEGACY_POWER_STATS 	:= true
+#TARGET_HAS_NO_WIFI_STATS 	:= true
+#TARGET_USES_INTERACTION_BOOST 	:= true
 
 # Filesystem
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 20971520
@@ -129,6 +142,7 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
@@ -174,9 +188,6 @@ USE_DEVICE_SPECIFIC_LOC_API := true
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
-# PowerHAL
-TARGET_POWERHAL_VARIANT := qcom
-
 # QCRIL
 TARGET_RIL_VARIANT := caf
 
@@ -208,9 +219,9 @@ endif
 
 # SELinux policies
 # qcom sepolicy
-include device/qcom/sepolicy/sepolicy.mk
-
-BOARD_SEPOLICY_DIRS += \
-    $(DEVICE_PATH)/sepolicy
+#include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/legacy-sepolicy.mk
+#BOARD_SEPOLICY_DIRS += \
+#    $(DEVICE_PATH)/sepolicy
 
 -include vendor/zuk/ham/BoardConfigVendor.mk
