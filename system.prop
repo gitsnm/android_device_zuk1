@@ -41,3 +41,11 @@ ro.opa.eligible_device=true
 dalvik.vm.boot-dex2oat-threads=4
 dalvik.vm.dex2oat-threads=2
 dalvik.vm.image-dex2oat-threads=4
+
+# Time services
+persist.timed.enable=true
+
+# Qualcomm® aptX™
+persist.bt.enableAptXHD=true
+persist.service.btui.use_aptx=1
+persistent.bt.a2dp_offload_cap=sbc-aptx-aptXHD
