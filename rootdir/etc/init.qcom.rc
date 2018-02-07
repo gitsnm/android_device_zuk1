@@ -244,14 +244,6 @@ on post-fs-data
 
 
 
-    #dt2w
-    write /proc/touchpanel/double_tap_enable 1
-    # Touchscreen
-    chown system radio /proc/touchpanel/double_tap_enable
-    chmod 0660 /proc/touchpanel/double_tap_enable
-
-
-
     setprop vold.post_fs_data_done 1
 
     # Create PERFD deamon related dirs
