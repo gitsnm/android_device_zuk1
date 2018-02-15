@@ -70,7 +70,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     power.msm8974 \
-#    android.hardware.power@1.0-impl
+    android.hardware.power@1.0-impl
 
 # Keymaster
 PRODUCT_PACKAGES += \
