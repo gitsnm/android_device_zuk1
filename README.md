@@ -1,3 +1,5 @@
+This device tree forked from Shubhambsie https://github.com/sb6596
+
 Copyright 2017 - The LineageOS Project.
 
 Device Tree for Lenovo ZUK Z1 (ham)
