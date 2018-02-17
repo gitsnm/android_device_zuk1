@@ -62,15 +62,15 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl 
 
 # Power
-#PRODUCT_PACKAGES += \
-#    android.hardware.power@1.1-service-qti
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-service-qti
 #    power.msm8974
 #    android.hardware.power@1.0-service.msm8974
 
 # Power
-PRODUCT_PACKAGES += \
-    power.msm8974 \
-    android.hardware.power@1.0-impl
+#PRODUCT_PACKAGES += \
+#    power.msm8974 \
+#    android.hardware.power@1.0-impl
 
 # Keymaster
 PRODUCT_PACKAGES += \
