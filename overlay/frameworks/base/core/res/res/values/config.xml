@@ -237,7 +237,7 @@
          to maximize power savings but not all devices support it.
          Refer to autosuspend.h for details.
     -->
-    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
+<!--    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool> -->
 
     <!-- Power Management: Specifies whether to decouple the interactive state of the
          device from the display on/off state.
@@ -252,7 +252,7 @@
          to maximize power savings but not all devices support it.
          Refer to power.h for details.
     -->
-    <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool> 
+<!--    <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>  -->
 
 
     <!-- Whether the always on display mode is available. -->
