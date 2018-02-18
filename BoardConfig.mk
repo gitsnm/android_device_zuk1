@@ -216,7 +216,7 @@ ADD_RADIO_FILES := true
 
 # Use HW crypto for ODE
 TARGET_HW_DISK_ENCRYPTION := true
-
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
 # Added to indicate that protobuf-c is supported in this build
 PROTOBUF_SUPPORTED := true
 
