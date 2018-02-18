@@ -59,6 +59,9 @@ BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 BOARD_KERNEL_CMDLINE := console=tty60,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3b7 ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1 vmalloc=480M androidboot.selinux=permissive
 #BOARD_KERNEL_CMDLINE += androidboot.bootdevice=msm_sdcc.1 vmalloc=480M androidboot.selinux=permissive
 #TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_SOURCE := kernel/cyanogen/msm8974
+TARGET_KERNEL_CONFIG := lineageos_k9_defconfig
+#KERNEL_TOOLCHAIN        := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin
 
 # Enable DIAG on eng builds
 ifeq ($(TARGET_BUILD_VARIANT),eng)
@@ -67,6 +70,15 @@ endif
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
+TARGET_USES_QCOM_BSP := true
+
+# Audio/media/display
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8974
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8974
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8974
+TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8974
+
+
 
 # ADB legacy interface
 TARGET_USES_LEGACY_ADB_INTERFACE := true
@@ -97,12 +109,12 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 WITH_LINEAGE_CHARGER := false
 
 # PowerHAL
-#TARGET_POWERHAL_VARIANT := qcom
+TARGET_POWERHAL_VARIANT := qcom
 
 # PowerHAL
-TARGET_HAS_LEGACY_POWER_STATS  := true
-TARGET_HAS_NO_WIFI_STATS       := true
-TARGET_USES_INTERACTION_BOOST  := true
+#TARGET_HAS_LEGACY_POWER_STATS  := true
+#TARGET_HAS_NO_WIFI_STATS       := true
+#TARGET_USES_INTERACTION_BOOST  := true
 
 TARGET_TAP_TO_WAKE_NODE := /sys/devices/virtual/touch/tp_dev/gesture_on
 
@@ -155,10 +167,10 @@ BOARD_HOSTAPD_DRIVER             := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_qcwcn
 WIFI_DRIVER_FW_PATH_STA          := "sta"
 WIFI_DRIVER_FW_PATH_AP           := "ap"
-TARGET_USES_WCNSS_CTRL           := true
-PRODUCT_VENDOR_MOVE_ENABLED      := true
-TARGET_USES_QCOM_WCNSS_QMI       := true
-TARGET_USES_WCNSS_MAC_ADDR_REV   := true
+#TARGET_USES_WCNSS_CTRL           := true
+#PRODUCT_VENDOR_MOVE_ENABLED      := true
+#TARGET_USES_QCOM_WCNSS_QMI       := true
+#TARGET_USES_WCNSS_MAC_ADDR_REV   := true
 
 # Wifi - EAP-SIM
 #CONFIG_EAP_PROXY                 := qmi

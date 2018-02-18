@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/screwd_ham.mk
+    $(LOCAL_DIR)/omni_ham.mk
