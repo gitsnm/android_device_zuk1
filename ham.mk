@@ -19,7 +19,6 @@ LOCAL_PATH := device/zuk/ham
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay vendor/extra/overlays/phone-1080p
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
-$(info DEVICE $(LOCAL_PATH))
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
