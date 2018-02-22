@@ -35,7 +35,7 @@
 
 //#define LOG_NDEBUG 0
 
-#define DOUBLE_TAP_FILE "/proc/touchpanel/double_tap_enable"
+#define DOUBLE_TAP_FILE "/sys/devices/virtual/touch/tp_dev/gesture_on"
 
 static void power_init(struct power_module __unused *module) {
     ALOGI("%s", __func__);
