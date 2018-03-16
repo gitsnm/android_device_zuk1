@@ -1,3 +1,3 @@
-add_lunch_combo cos_ham-user
-add_lunch_combo cos_ham-userdebug
-add_lunch_combo cos_ham-eng
+add_lunch_combo lineage_ham-user
+add_lunch_combo lineage_ham-userdebug
+add_lunch_combo lineage_ham-eng

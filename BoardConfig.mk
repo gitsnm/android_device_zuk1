@@ -225,9 +225,9 @@ WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
 
 # SELinux policies
 # qcom sepolicy
-include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
 #include device/qcom/sepolicy/legacy-sepolicy.mk
-BOARD_SEPOLICY_DIRS += \
-    $(DEVICE_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += \
+#    $(DEVICE_PATH)/sepolicy
 
 -include vendor/zuk/ham/BoardConfigVendor.mk
